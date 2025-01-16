@@ -1,0 +1,88 @@
+/* Fix the nav element */
+nav {
+  width: 100%;
+  /* background: rgb(27, 117, 147); */
+  color: #1a588a;
+  padding: 4px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+
+  z-index: 100;
+  top: 100px; /* adjust as per your requirement */
+  left: 0;
+  margin-bottom: 100px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style individual list items */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* nav ul li:hover {
+  color: rgb(58, 58, 129);
+  background-color: antiquewhite;
+} */
+.dark-nav {
+  background: #1a588a;
+  color: #fff;
+  transition: 0.5;
+}
+.icon-big {
+  background: none;
+  /* width: 34px; */
+}
+.menu-icon {
+  display: none;
+}
+
+/* media query */
+@media (max-width: 1000px) {
+  /* .logo {
+    width: 140px;
+  } */
+  nav ul li {
+    margin: 10px 15px;
+  }
+}
+@media (max-width: 840px) {
+  nav {
+    padding: 15px 0;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #1a588a;
+    color: #fff;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: 0.5s;
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px 40px;
+  }
+  .menu-icon {
+    display: flex;
+
+    width: 50px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
+}

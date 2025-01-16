@@ -1,0 +1,126 @@
+/* FloatingChatIcon.css */
+
+/* Container for the chat icon and expanded content */
+.chat-container {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Floating icon styles */
+.chat-icon {
+  background-color: #0078d4;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Expanded chat window styles */
+.chat-expanded {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: rgb(107, 107, 107);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Chat messages area */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message.user p {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  align-self: flex-start;
+}
+
+.message p {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-input-form {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #005bb5;
+}
+
+/* When the chat is open, the icon becomes smaller */
+.chat-container.open .chat-icon {
+  transform: scale(0.8);
+}
+
+/* media query */
+@media (max-width: 600px) {
+  .chat-expanded {
+    width: 200px;
+    height: 200px;
+  }
+  .message.user p {
+    font-size: 12px;
+  }
+  .chat-input {
+    font-size: 12px;
+    width: 100px;
+  }
+  .send-button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

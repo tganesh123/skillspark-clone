@@ -1,0 +1,16 @@
+.partners {
+  /* margin: 70px auto; */
+  width: 90%;
+  text-align: center;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto new rows */
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Defines both horizontal and vertical gaps */
+  margin-bottom: 30px;
+}
+.photos img {
+  width: 20%;
+}
