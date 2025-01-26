@@ -2,8 +2,8 @@ import React from "react"
 // import "./Slider.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
-import laptop from "../assets/laptopwall.jpg"
-import sliderImg from "../assets/sliderImg.png"
+// import laptop from "../assets/laptopwall.jpg"
+// import sliderImg from "../assets/sliderImg.png"
 import sliderImg2 from "../assets/sliderImg2.png"
 import sliderImg1 from "../assets/slider1img.png"
 const Slider = () => {
