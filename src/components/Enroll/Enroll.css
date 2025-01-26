@@ -6,10 +6,10 @@
   width: 90%;
 }
 .enroll-left {
-  flex-basis: 45%;
+  flex-basis: 40%;
 }
 .enroll-right {
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 .enroll-img {
   width: 140%;
@@ -19,10 +19,8 @@ ol {
   margin-top: 20px;
 }
 ol li {
-  font-size: larger;
+  font-size: 20px;
   margin-bottom: 15px;
-  color: rgb(50, 104, 192);
-  font-weight: 700;
 }
 
 /* media query */

@@ -1,0 +1,21 @@
+.for-route {
+  /* margin-top: 180px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  height: 150px;
+  /* padding-top: 10px; */
+  padding-left: 20px;
+  background-color: rgb(231, 231, 231);
+}
+.for-route h1 {
+  font-size: 38px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.for-links {
+  color: rgb(66, 66, 255);
+  /* margin-top: 10px; */
+}

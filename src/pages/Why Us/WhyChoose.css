@@ -1,0 +1,70 @@
+/*  */
+
+.choose-left {
+  margin: 90px 15px;
+  margin-right: 0px;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+}
+
+.left-contents .p1 {
+  margin-top: 30px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding-left: 0;
+}
+.left-contents h1 {
+  margin-left: 10px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.left-contents h1 span {
+  color: rgb(45, 45, 236);
+}
+.left-contents-lists {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.left-contents-lists ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  padding-left: 10px;
+}
+.left-contents-lists ul li {
+  display: flex;
+}
+
+.left-contents-lists li {
+  margin-left: 0px;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.h4-elem {
+  /* display: flex; */
+  align-items: center;
+  margin-top: 20px;
+  /* margin: 10px; */
+  /* width: 30px; */
+  padding-left: 0;
+  font-size: 18px;
+  height: 50px;
+  background-color: rgb(65, 116, 235);
+  border-radius: 50%;
+  padding: 0px 20px;
+  padding-top: 13px;
+}
+
+.left-contents-lists li div h3,
+.left-contents-lists li div p {
+  margin-left: 10px; /* Indentation for the text of h3 and p */
+  margin-top: 5px; /* Remove any extra space above p */
+  margin-bottom: 15px;
+}
+.left-contents-lists li div h3 {
+  margin-left: 20px;
+}

@@ -1,15 +1,26 @@
 .footer {
-  margin: 10px;
+  margin: 0px;
+  background: #022d7a;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #797979;
+  /* border-top: 1px solid #797979; */
   padding: 15px 0;
+  color: white;
 }
-.footer ul li {
+ul {
+  display: flex;
+  margin-right: 5%;
+}
+ul li {
   list-style: none;
-  display: inline-block;
-  margin-left: 10%;
+
+  /* display: inline-block; */
+
+  margin-left: 50px;
+}
+p {
+  padding-left: 2%;
 }
 @media (max-width: 600px) {
   .footer {

@@ -1,0 +1,138 @@
+.wrapper-both {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  padding: 2%;
+}
+
+.search-bar1 {
+  background-color: white;
+  margin: 40px 20px;
+  width: 35%;
+  box-shadow: 0 3px 4px black;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.search-bar2 {
+  display: flex;
+
+  align-items: center;
+  padding: 15px;
+  margin-left: 8px;
+  height: 80px;
+}
+.search-bar1 h1 {
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.check-boxes {
+  margin: 10px;
+  padding: 15px;
+}
+.course-cards {
+  /* display: inline-block; */
+  width: 18%;
+}
+.for-sorting {
+  border-radius: 10px;
+  background-color: white;
+  margin: 20px;
+  padding: 5px 0;
+  margin-bottom: 0;
+
+  /* margin-bottom: 0;
+  
+  */
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.for-sorting {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort-by {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  justify-content: end;
+
+  padding-right: 5%;
+}
+
+/* .div-drop {
+  position: inherit;
+
+  top: 0;
+  display: flex;
+  align-items: center;
+} */
+
+.dropdown-btn {
+  margin: 0;
+  margin-top: -10px;
+  padding: 2px;
+  /* padding: 5px; */
+  font-size: 14px;
+  /* size: 50px; */
+  background: rgb(91, 129, 246);
+  border: 1px solid rgb(0, 148, 168);
+  color: whitesmoke;
+}
+.dropdown-btn:hover {
+  background-color: white;
+  border: 1px solid rgb(0, 148, 168);
+
+  color: black;
+}
+.course-cards {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.cards-contin {
+  /* margin-top: 80px; */
+  width: 70%;
+  display: flex;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  align-items: start;
+  /* justify-content: ; */
+}
+.card.card-size {
+  /* margin-top: 5px; */
+  width: 47%;
+  /* margin: 10px; */
+}
+.card-size img {
+  flex: 1;
+  padding: 8px;
+  height: 200px;
+  object-fit: cover;
+}
+.card-size img:hover {
+  transform: scale(1.02);
+}
+
+.title-btn {
+  padding: 5px 10px;
+  background-color: rgb(94, 143, 255);
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+.card-text {
+  margin-top: 4px;
+  color: rgb(81, 129, 241);
+  font-size: 16px;
+  font-weight: 500;
+}

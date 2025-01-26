@@ -1,25 +1,52 @@
+/* Style for the description container */
 .description {
-  margin: 100px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Arrange elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 8%;
+
+  padding-left: 10%; /* Add some padding around the content */
+  padding-right: 10%; /* Add some padding around the content */
+  margin: 40px auto; /* Center the container and add spacing */
+  max-width: 100%; /* Limit the container width for readability */
+  background: rgb(234, 228, 228);
 }
-.description-left {
-  flex-basis: 40%;
-  position: relative;
+
+/* Style for the heading (h2) */
+.description h2 {
+  font-size: 2em; /* Adjust the font size */
+  margin-bottom: 20px; /* Space between the heading and the paragraph */
+  font-weight: bold; /* Make the heading bold */
+  color: #333; /* Adjust text color */
 }
-.description-right {
-  flex-basis: 56%;
+
+/* Style for the paragraph */
+.description p {
+  font-size: 16px;
+  text-align: center; /* Justify the text for better readability */
+  font-weight: 500;
+  line-height: 1.6; /* Increase line height for readability */
+  margin-bottom: 20px; /* Space between the paragraph and the button */
+  color: #555; /* Adjust paragraph color */
+  max-width: 85%; /* Limit paragraph width */
 }
-.description-img {
-  width: 100%;
-  border-radius: 10px;
+
+/* Style for the button */
+.btn {
+  padding: 10px 20px; /* Add padding inside the button */
+  background-color: #240cfb; /* Green background color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  font-size: 1.1em; /* Adjust button font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color change */
 }
-.play-icon {
-  width: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #45a049; /* Darker green on hover */
 }

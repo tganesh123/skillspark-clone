@@ -1,0 +1,85 @@
+.course-head-container {
+  width: 100%;
+  padding: 3.5%;
+  background-color: white;
+}
+.elem-container {
+  display: flex;
+  align-items: center;
+
+  /* border-radius: 5px; */
+}
+.elem-container img {
+  width: 280px;
+  margin-right: 20px;
+}
+.flex-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-child {
+  margin: 2px 20px;
+}
+.btns {
+  display: flex;
+  margin-top: 0;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.btns button {
+  font-variant: unset;
+  font-size: 14px;
+  color: rgb(23, 112, 255);
+  padding: 4px 10px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(206, 226, 255, 0.973);
+}
+.btns button:hover {
+  color: rgb(65, 189, 111);
+}
+.sharebtn button {
+  color: rgba(41, 73, 255, 0.833);
+  background-color: transparent;
+  border-radius: 5px;
+  border: 0.5px solid rgb(38, 125, 255);
+  padding: 10px 70px;
+}
+
+.icons-on-hover {
+  margin-top: 5px;
+  /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.icons-on-hover .icon-size-small1 {
+  margin: 6px 4px;
+  width: 25px;
+  color: rgb(49, 26, 254);
+  background-color: transparent;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* display: none; */
+}
+
+.sharebtn:hover .icons-on-hover .icon-size-small1 {
+  opacity: 1;
+  transform: translateY(0);
+  /* transition: opacity 0.3s ease; */
+
+  /* display: inline-block; */
+  /* margin: 2px 2px; */
+  /* width: 20px; */
+}
+
+@media (max-width: 650px) {
+  .course-head-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 3.5%;
+  }
+}

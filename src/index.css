@@ -14,21 +14,12 @@ body {
   max-width: 100%;
   margin: auto;
 }
-.flexSB {
-  display: flex;
-  justify-content: space-between;
-}
 
 .logo1 {
   width: 240px;
 }
-.social {
-  /* width: 120px; */
 
-  display: flex;
-  gap: 5;
-}
-.icon {
+/* .icon {
   gap: 3;
   width: 50px;
   line-height: 40px;
@@ -37,16 +28,13 @@ body {
   background-color: rgba(102, 73, 73, 0.3);
   color: #000000;
   transition: 0.5s;
-}
-.icon:hover {
-  background-color: rgb(250, 147, 63);
+} */
+.icon-size-small:hover {
+  background-color: orangered;
   cursor: pointer;
   /* color: #0095ff; */
 }
-.icon.icon-big:hover {
-  cursor: pointer;
-  color: rgb(6, 118, 6);
-}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -64,21 +52,21 @@ a {
 .btn {
   background: #1d7ac1;
   color: #212121;
-  padding: 14px 25px;
+  padding: 18px 25px;
   font-size: 16px;
   border-radius: 30px;
   cursor: pointer;
   border: 0;
   outline: 0;
 }
-.carouselMargin {
-  margin-top: 180px;
-  /* height: 200px; */
-}
 
 .btn.dark-btn {
   color: white;
-  background: #303ca5;
+  background: #1650ff;
+}
+.btn.dark-btn:hover {
+  background-color: white;
+  color: #3568ff;
 }
 @media (max-width: 1200px) {
   .container1 {

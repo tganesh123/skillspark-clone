@@ -1,6 +1,6 @@
 .title {
   text-align: center;
-  color: #0db5ed;
+
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -9,6 +9,17 @@
 .title h2 {
   font-size: 32px;
   font-weight: 700;
-  color: black;
+  color: #0db5ed;
   text-transform: none;
+}
+.title p {
+  font-size: 16px;
+}
+@media (max-width: 700px) {
+  .title h2 {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 12px;
+  }
 }

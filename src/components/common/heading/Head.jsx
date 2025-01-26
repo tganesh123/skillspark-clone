@@ -5,9 +5,11 @@ import { FaFacebookF } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import { IoLogoWhatsapp } from "react-icons/io"
 import { FaPhoneVolume } from "react-icons/fa6"
+import { FaLocationDot } from "react-icons/fa6"
 import { CiLocationOn } from "react-icons/ci"
 
 import menuIcon from "../../../assets/menuIcon.png"
+import { Link } from "react-router-dom"
 
 const Head = () => {
   // const [mobileMenu, setMobileMenu] = useState(false)
@@ -19,36 +21,63 @@ const Head = () => {
     <>
       <div className='fixed'>
         <section className='head'>
-          <div className='flexSB'>
-            <div className='logo'>
-              <img src={logo} alt='' className='logo1' />
-            </div>
+          <div className='logo'>
+            <Link to='/'>
+              <img src={logo} alt='Home Logo' className='logo1' />
+            </Link>
+          </div>
 
-            <div className='social'>
-              <i className='icon icon-big'>
-                <CiLocationOn className='icon-size' />
+          <div className='social'>
+            <div className='icon-big'>
+              <i className='icon i-location'>
+                <FaLocationDot className='icon-size-location' />
+                <span className='location'>
+                  6th floor, Shankhamul Tower
+                  <br />
+                  {/* <br /> */}
+                  Ktm,Nepal
+                </span>
               </i>
-              <span className='location'>
-                6th floor, Shankhamul Tower
-                <br />
-                Ktm,Nepal
-              </span>
-              <i className='icon icon-big'>
+
+              <i className='icon'>
                 <FaPhoneVolume className='icon-size' />
+                <span className='phoneNo'>+977 9802359091/2</span>
               </i>
-              <span className='phoneNo'>+977 9802359091/2</span>
+            </div>
+            <div className='icon-small'>
+              <a
+                href='https://www.facebook.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <i className='icon1'>
+                  <FaFacebookF className='icon-size-small' />
+                </i>
+              </a>
+              <a
+                href='https://www.instagram.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {" "}
+                <i className='icon1'>
+                  <FaInstagram className='icon-size-small' />
+                </i>
+              </a>
 
-              <i className='icon'>
-                <FaFacebookF className='icon-size' />
-              </i>
-              <i className='icon'>
-                <FaInstagram className='icon-size' />
-              </i>
-              <i className='icon'>
-                <IoLogoWhatsapp className='icon-size' />
-              </i>
+              <a
+                href='https://www.whatsapp.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {" "}
+                <i className='icon1'>
+                  <IoLogoWhatsapp className='icon-size-small' />
+                </i>
+              </a>
             </div>
           </div>
+
           {/* <img
             src={menuIcon}
             alt=''

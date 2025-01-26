@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react"
+import { Link } from "react-router-dom" // Import Link from react-router-dom
 import "../../index.css"
 import "./navbar.css"
-import { Link } from "react-scroll"
 import menuIcon from "../../assets/menuIcon.png"
 
 const Navbar = () => {
-  const [sticky, setSticky] = useState(false)
+  const [sticky, setSticky] = useState(true)
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 50 ? setSticky(true) : setSticky(false)
+      window.scrollY > -1 ? setSticky(true) : setSticky(false)
     })
   }, [])
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -18,39 +18,26 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`container1 ${sticky ? "dark-nav" : ""}`}>
+    <nav className={`nav-container ${sticky ? "dark-nav" : ""}`}>
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
-          <Link to='courses' smooth={true} offset={-260} duration={500}>
-            All Courses
-          </Link>
+          <Link to='/All Courses'>All Courses</Link>
         </li>
         <li>
-          <Link to='courses' smooth={true} offset={0} duration={500}>
-            Upcoming Courses
-          </Link>
+          <Link to='/Upcoming Classes'>Upcoming Courses</Link>
         </li>
         <li>
-          {" "}
-          <Link to='about' smooth={true} offset={-150} duration={500}>
-            About Us
-          </Link>
+          <Link to='/About Us'>About Us</Link>
         </li>
         <li>
-          {" "}
-          <Link to='#' smooth={true} offset={0} duration={500}>
-            FAQs
-          </Link>
+          <Link to='/faqs'>FAQs</Link>
         </li>
         <li>
-          {" "}
-          <Link to='testimonials' smooth={true} offset={-260} duration={500}>
-            Why Choose Us
-          </Link>
+          <Link to='/Why Choose Us?'>Why Choose Us</Link>
         </li>
-        <li class='nav-item dropdown'>
+        <li className='nav-item dropdown'>
           <a
-            class='nav-link dropdown-toggle'
+            className='nav-link dropdown-toggle'
             href='#'
             id='navbarDropdown'
             role='button'
@@ -59,31 +46,26 @@ const Navbar = () => {
           >
             Events
           </a>
-          <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
+          <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
             <li>
-              <a class='dropdown-item' href='#'>
+              <a className='dropdown-item' href='/past-events'>
                 Past Events
               </a>
             </li>
             <li>
-              <a class='dropdown-item' href='#'>
-                upcoming Events
+              <a className='dropdown-item' href='/upcoming-events'>
+                Upcoming Events
               </a>
             </li>
           </ul>
         </li>
         <li>
-          <Link
-            to='contact'
-            smooth={true}
-            offset={-260}
-            duration={500}
-            className='btn'
-          >
+          <Link to='/contact' className='btn dark-btn'>
             Contact Us
           </Link>
         </li>
       </ul>
+
       <img src={menuIcon} alt='' className='menu-icon' onClick={toggleMenu} />
     </nav>
   )

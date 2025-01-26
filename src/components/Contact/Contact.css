@@ -19,12 +19,15 @@
 }
 .contact-col h3 img {
   width: 35px;
-  margin-left: 10px;
+  margin-left: 25px;
 }
 .contact-col p {
   max-width: 450px;
-  line-height: 3;
+  line-height: 1.5;
   list-style: 0.3;
+}
+.contact-col ul {
+  display: block;
 }
 .contact-col ul li {
   display: flex;

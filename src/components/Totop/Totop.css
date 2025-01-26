@@ -1,23 +1,24 @@
 .totop {
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  size: 20px;
+  right: 35px;
+  /* size: 20px; */
   background-color: #aab4c0;
   background-color: transparent;
+  font-size: 20px;
 
   color: rgb(15, 1, 1);
   border: none;
-  padding: 10px;
+  padding: 8px 5px;
 
   /* width: 20px; */
   /* font-size: 12px; */
-  border-radius: 45px;
+  border-radius: 5px;
   /* font-size: 20px; */
   cursor: pointer;
   /*display: none;  Initially hidden */
   transition: opacity 0.3s;
 }
 .totop:hover {
-  background-color: #7a99b9;
+  background-color: #4d545a;
 }

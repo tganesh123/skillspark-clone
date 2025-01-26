@@ -39,12 +39,12 @@ const Contact = () => {
           send us message <img src={msgIcon} alt='' />
         </h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex sed
-          quo temporibus ab? Esse.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          perspiciatis quam neque blanditiis magni voluptate est corrupti
+          quaerat praesentium rerum.
         </p>
         <ul>
           <li>
-            {" "}
             <img src={mailIcon} alt='' />
             Contact@skillspark.dev
           </li>
